@@ -1,0 +1,37 @@
+.brand-logo {
+    padding-left: 1% !important;
+    vertical-align: middle !important;
+    height: 100%;
+    width: 19rem;
+}
+
+#logo {
+    height: 90%;
+    width: auto;
+    margin-top: 3px;
+}
+
+.brand-name {
+    font-family: marcellus;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 14rem;
+    padding-left: 5px !important;
+}
+
+.navbar-fixed {
+    z-index: 100000000 !important;
+}
+
+.sidenav {
+    z-index: 100000000 !important;
+}
+
+#contact-dropdown li:hover {
+    background-color: lightgreen !important;
+}
+
+#George {
+    margin-top: 11rem;
+}

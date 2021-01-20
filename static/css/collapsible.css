@@ -1,0 +1,15 @@
+.collapsible {
+    padding: 5%;
+}
+
+.collapsible-header {
+    border-bottom: 1px solid palegoldenrod !important;
+}
+
+.collapsible-header:hover {
+    background-color: #43a047 !important;
+}
+
+.collapsible-body {
+    background-color: palegoldenrod;
+}

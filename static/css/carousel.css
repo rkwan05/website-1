@@ -1,0 +1,153 @@
+.carousel-item {
+    pointer-events: none;
+}
+
+.custom-left-button-wrapper {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10000;
+}
+
+.custom-left-button-wrapper a {
+    left: 10px !important;
+}
+
+.custom-left-button-wrapper a:hover {
+    background-color: rgb(23, 177, 23) !important;
+}
+
+.custom-right-button-wrapper {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10000;
+}
+
+.custom-right-button-wrapper a {
+    right: 10px !important;
+}
+
+.custom-right-button-wrapper a:hover {
+    background-color: rgb(23, 177, 23) !important;
+}
+
+
+
+.staggered-list {
+    position: absolute;
+    top: 2rem;  
+    max-width: 28rem;
+    pointer-events: none;
+}
+
+.right-staggered-list {
+    right: 5%;
+}
+
+.center-staggered-list {
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 1rem !important;
+}
+
+.left-staggered-list {
+    left: 10%;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.staggered-list ul li div {
+    width: 100%;
+    text-align: center;
+}
+
+.staggered-list ul {
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.staggered-list li {
+    display: inline-block;
+    animation-duration: 350ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.caption-title {
+    height: calc(2rem + 3px);
+    --animation-order: 1;
+    animation-name: animateInHeaders;
+    animation-delay: calc(var(--animation-order) * 300ms);
+}
+
+.caption-subject {
+    height: calc(1.5rem + 3px);
+    margin-top: 2px;
+    --animation-order: 2;
+    animation-name: animateInHeaders;
+    animation-delay: calc(var(--animation-order) * 350ms);
+}
+
+.caption-body {
+    height: 8rem;
+    max-width: 80%;
+    margin-top: 1rem;
+    --animation-order: 3;
+    animation-name: animateInText;
+    animation-delay: calc(var(--animation-order) * 400ms);
+}
+
+.seperation {
+    margin-top: 3rem;
+}
+
+
+
+@keyframes animateInHeaders {
+    0% {
+        opacity: 0;
+        color: rgba(50, 205, 50, 0);
+        transform: scale(0.6) translateY(-8px);
+    }
+
+    100% {
+        opacity: 1;
+        background-color: rgba(30, 189, 30, 0.9);
+    }
+}
+
+@keyframes animateInText {
+    0% {
+        opacity: 0;
+        color: rgba(50, 205, 50, 0);
+        transform: scale(0.6) translateY(-8px);
+    }
+
+    100% {
+        opacity: 1;
+        background-color: rgba(213, 218, 213, 0.7);
+    }
+}
